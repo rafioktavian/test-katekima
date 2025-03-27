@@ -7,8 +7,17 @@
           <SideDashMenu/>
           <main class="w-full lg:w-4/5">
             <section class="transaction bg-white p-6 rounded-lg shadow-md">
-              <h1 class="text-2xl font-bold mb-6">Product List</h1>
-
+              <div class="flex md:flex-row justify-between items-center mb-6">
+                <h1 class="text-2xl font-bold mb-6">Product List</h1>
+                <el-button
+                  type="primary"
+                  size="medium"
+                  round
+                  @click="addProduct()"
+                >
+                  Tambah Produk
+                </el-button>
+              </div>
               <!-- Pencarian -->
               <el-input
                 v-model="searchQuery"
@@ -158,6 +167,10 @@ const handlePageChange = (val: number) => {
 
 const handleEdit = (id: number) => {
   router.push(`/edit/${id}`)
+}
+
+const addProduct = () => {
+  router.push('/add')
 }
 
 const handleDelete = (id: number) => {
