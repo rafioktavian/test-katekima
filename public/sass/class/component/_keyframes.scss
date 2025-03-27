@@ -1,0 +1,43 @@
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {  left: -500px; }
+    100% {  left: 0px; }
+}
+
+@-moz-keyframes myfirst {
+    0%   {  left: -500px; }
+    100% {  left: 0px; }
+}
+
+@-o-keyframes myfirst {
+    0%   {  left: -500px; }
+    100% {  left: 0px; }
+}
+
+@keyframes myfirst {
+    0%   {  left: -500px; }
+    100% {  left: 0px; }
+}
+
+
+// Transition animation fade in feature box
+@-webkit-keyframes fade-feature {
+      0% { opacity: 0; /* -webkit-transform: translateY(-100%); */ }   
+    100% { opacity: 1; /* -webkit-transform: translateY(0); */ }
+}
+@-moz-keyframes fade-feature {
+      0% { opacity: 0; /* -moz-transform: translateY(-100%); */ }   
+    100% { opacity: 1; /* -moz-transform: translateY(0); */ }
+}
+@-ms-keyframes fade-feature {
+      0% { opacity: 0; /* -moz-transform: translateY(-100%); */ }   
+    100% { opacity: 1; /* -moz-transform: translateY(0); */ }
+}
+@-o-keyframes fade-feature {
+      0% { opacity: 0; /* -moz-transform: translateY(-100%); */ }   
+    100% { opacity: 1; /* -moz-transform: translateY(0); */ }
+}
+@keyframes fade-feature {
+      0% { opacity: 0; /* -moz-transform: translateY(-100%); */ }   
+    100% { opacity: 1; /* -moz-transform: translateY(0); */ }
+}

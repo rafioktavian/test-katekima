@@ -1,0 +1,346 @@
+.table-default {
+  font-size: 16px;
+  color: $black-1;
+  font-family: $font-title;
+  border: 2px solid $primary-color;
+  .thead-primary th {
+    background: $primary-color;
+    @include font($font-title, 15px, 400, $white-1);
+    letter-spacing: 0.4px;
+    border: 0;
+    @media screen and (max-width: 767px) {
+      &:last-child {
+        border-right: 2px solid $primary-color;
+      }
+    }
+  }
+  tbody {
+    td {
+      font-size: 16px;
+      color: $black-3;
+      font-family: $font-title;
+      border: 0;
+      .text-primary {
+        color: $primary-color !important;
+      }
+      @media screen and (max-width: 767px) {
+        &:last-child {
+          border-right: 2px solid $primary-color;
+        }
+        font-size: 14px;
+      }
+    }
+    tr.rgba-blue td {
+      background: $blue-3;
+    }
+    tr.rgba-gray-blue td {
+      background: $gray-blue-1;
+    }
+  }
+  &.tbl-p-l-first {
+    thead tr th,
+    tbody tr td {
+      &:first-child {
+        padding-left: 1.5rem;
+        @media screen and (max-width: 767px) {
+          padding-left: 0.5rem;
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.th-top {
+  vertical-align: top !important;
+}
+
+.th-middle {
+  vertical-align: middle !important;
+}
+
+.customize-table-feature {
+  position: relative;
+  padding: 1.3rem !important;
+  border-left: 1px solid #d8d8d8 !important;
+  @media screen and (max-width: 575px) {
+    padding: 5px !important;
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    padding: 12px !important;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding: 14px !important;
+  }
+  &.blue-1 {
+    background: #b7ebff !important;
+  }
+  &.blue-2 {
+    background: #7adbfe !important;
+  }
+  &.blue-3 {
+    background: #41bcea !important;
+  }
+  &.blue-4 {
+    background: #2f95bb !important;
+  }
+  .title-table-feature {
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+    &.title-lg {
+      font-size: 30px !important;
+      @media screen and (max-width: 575px) {
+        font-size: 9px !important;
+        padding-left: 0 !important;
+        margin-top: 0 !important;
+      }
+      @media (min-width: 576px) and (max-width: 767px) {
+        font-size: 16px !important;
+        padding-left: 0 !important;
+        margin-top: 0 !important;
+      }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        font-size: 24px !important;
+        padding-left: 0 !important;
+        margin-top: 0 !important;
+      }
+    }
+    &.title-semi-md {
+      font-size: 23px !important;
+      @media screen and (max-width: 575px) {
+        font-size: 8px !important;
+      }
+      @media (min-width: 576px) and (max-width: 767px) {
+        font-size: 14px !important;
+      }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        font-size: 19px !important;
+      }
+    }
+    &.title-md {
+      font-size: 18px !important;
+      @media screen and (max-width: 575px) {
+        font-size: 6px !important;
+      }
+      @media (min-width: 576px) and (max-width: 767px) {
+        font-size: 10px !important;
+      }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        font-size: 16px !important;
+      }
+    }
+    &.title-h {
+      min-height: 40px;
+      @media screen and (max-width: 767px) {
+        min-height: 3px !important;
+      }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        min-height: 10px !important;
+      }
+    }
+  }
+  .desc-content-h {
+    min-height: 70px;
+    @media screen and (max-width: 767px) {
+      min-height: 5px !important;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      min-height: 10px !important;
+    }
+    &.h-150 {
+      min-height: 150px !important;
+      @media screen and (max-width: 575px) {
+        min-height: 30px !important;
+        margin-top: 0.5rem;
+      }
+      @media (min-width: 576px) and (max-width: 767px) {
+        min-height: 55px !important;
+      }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 0.5rem;
+        min-height: 130px !important;
+        .desc-table-feature {
+          font-size: 11px !important;
+        }
+      }
+    }
+  }
+  .desc-table-feature {
+    font-size: 14px !important;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    @media screen and (max-width: 575px) {
+      font-size: 4px !important;
+      margin-bottom: 1.5rem !important;
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+      font-size: 8px !important;
+      margin-bottom: 2rem !important;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      font-size: 13px !important; // margin-bottom: 2rem !important;
+    }
+  }
+  .bottom-set {
+    position: absolute;
+    bottom: 1rem;
+    @media screen and (max-width: 575px) {
+      bottom: 0.5rem;
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+      bottom: 0.8rem;
+    }
+    &.responsive-mbl {
+      .btn {
+        @media screen and (max-width: 575px) {
+          padding: 2px !important;
+          border-radius: 2px !important;
+          font-size: 4px !important;
+          margin-bottom: 0 !important;
+        }
+        @media (min-width: 576px) and (max-width: 767px) {
+          padding: 4px !important;
+          border-radius: 2px !important;
+          font-size: 7px !important;
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+          padding: 8px !important;
+          border-radius: 4px !important;
+          font-size: 10px !important;
+          .desc-table-feature {
+            font-size: 11px !important;
+          }
+        }
+      }
+      .desc-table-feature {
+        margin-top: 0.1rem !important;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+  .btn.bottom-set {
+    @media screen and (max-width: 575px) {
+      padding: 2px !important;
+      border-radius: 2px !important;
+      font-size: 4px !important;
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+      padding: 4px !important;
+      border-radius: 2px !important;
+      font-size: 7px !important;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      padding: 8px !important;
+      border-radius: 4px !important;
+      font-size: 10px !important;
+    }
+  }
+}
+
+.tb-body-price {
+  border-top: 1px solid #d8d8d8 !important;
+  tr:first-child td {
+    padding-top: 1rem !important;
+  }
+  tr:last-child td {
+    padding-bottom: 1rem !important;
+  }
+  @media screen and (max-width: 575px) {
+    td {
+      font-size: 8px !important;
+    }
+    .icon-check-strip {
+      width: 10px !important;
+      height: 10px !important;
+    }
+    tr:first-child td {
+      padding-top: 0.5rem !important;
+    }
+    tr:last-child td {
+      padding-bottom: 0.5rem !important;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    td {
+      font-size: 12px !important;
+    }
+    .icon-check-strip {
+      width: 12px !important;
+      height: 12px !important;
+    }
+    tr:first-child td {
+      padding-top: 0.5rem !important;
+    }
+    tr:last-child td {
+      padding-bottom: 0.5rem !important;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    td {
+      font-size: 14px !important;
+    }
+    .icon-check-strip {
+      width: 16px !important;
+      height: 16px !important;
+    }
+    tr:first-child td {
+      padding-top: 1rem !important;
+    }
+    tr:last-child td {
+      padding-bottom: 1rem !important;
+    }
+  }
+}
+
+.tb-content-color {
+  td {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    @media screen and (max-width: 575px) {
+      padding-top: 0.05rem;
+      padding-bottom: 0.05rem;
+    }
+  }
+  .td-box-1 {
+    background: #e3f8fe;
+    border-left: 1px solid #d8d8d8 !important;
+  }
+  .td-box-2 {
+    background: #d6f2fa;
+    border-left: 1px solid #d8d8d8 !important;
+  }
+  .td-box-3 {
+    background: #d3eaf0;
+    border-left: 1px solid #d8d8d8 !important;
+  }
+}
+
+.limit-height-table {
+  height: 500px;
+  overflow: auto;
+}
+
+.tes-mobile {
+  @media screen and (max-width: 575px) {
+    height: 400px;
+    overflow: auto;
+  }
+}
+
+.el-table--border .el-table__inner-wrapper {
+  z-index: 0;
+}
+
+.icon-table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

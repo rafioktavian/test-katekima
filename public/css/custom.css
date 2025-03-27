@@ -1,0 +1,47 @@
+.sec-basic p ul {
+    padding-left:15px
+}
+
+.sec-basic{
+    padding: 5% 0px;
+}
+
+.text-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: #374151;
+}
+
+.text-sub-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 28px;
+  line-height: 36px;
+  color: #374151;
+}
+
+.text-body-16 {
+  font-family: "Poppins";
+  font-style: normal;
+  line-height: 24px;
+  color: #374151;
+  font-size: 16px;
+}
+
+.text-body-18 {
+  font-family: "Poppins";
+  font-style: normal;
+  line-height: 24px;
+  color: #374151;
+  font-size: 18px;
+}
+
+.fw-4 {
+    font-weight: 400;
+}
+
+.fw-7 {
+    font-weight: 700;
+}

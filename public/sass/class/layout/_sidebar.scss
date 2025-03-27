@@ -1,0 +1,18 @@
+.sidebar{
+    will-change: min-height;
+
+    &.sidebar-custom.is-affixed{
+    	.inner-wrapper-sticky{
+    		left: auto !important;
+    		width: 350px !important;
+
+            @media (min-width: 992px) and (max-width: 1199px){ width: 290px !important; }
+    	}
+    }
+}
+
+.sidebar__inner{
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}

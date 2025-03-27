@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700|Open+Sans:300,400,500,600,700');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-title;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        outline: none !important;
+    }
+}
+
+.text-title {
+    font-family: $font-title !important;
+}
+
+.text-primary {
+    color: $primary-color !important;
+}
+
+.text-link {
+    color: $black-1;
+    &:hover,
+    &:focus {
+        color: $black-3;
+        // opacity: .65;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.vc-purple {
+  .vc-highlight {
+    background: $primary-color !important;
+  }
+}
+.vc-yellow {
+  .vc-highlight {
+    background: #FFC71E !important;
+    border-radius: 5px;
+  }
+}
+.vc-green {
+  .vc-highlight {
+    background: #34D66B !important;
+    border-radius: 5px;
+  }
+}
+.vc-indigo {
+  .vc-highlight {
+    background: #AA80F9 !important;
+    border-radius: 5px;
+  }
+}
+.vc-highlight.vc-highlight-bg-solid.border-unradius {
+    border-radius: 5px;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-primary-link {
+  color: $primary-color !important;
+  text-decoration: underline !important;
+}

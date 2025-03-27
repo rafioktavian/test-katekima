@@ -1,0 +1,154 @@
+// Gunakan saat styling teks
+@mixin font($font-family, $font-size, $font-weight, $color) {
+    font-family: $font-family !important;
+    color: $color !important;
+    font-weight: $font-weight !important;
+    font-size: $font-size !important;
+}
+
+@mixin radius($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin radius-important($value) {
+    // -webkit-border-radius: $value !important;
+    // -moz-border-radius: $value !important;
+    // -ms-border-radius: $value !important;
+    // -o-border-radius: $value !important;
+    border-radius: $value !important;
+}
+
+// placeholder color
+@mixin placeholder($color) {
+    &::-webkit-input-placeholder {
+        color: $color !important;
+    }
+    &::-moz-placeholder {
+        color: $color !important;
+    }
+    &:-ms-input-placeholder {
+        color: $color !important;
+    }
+    &:-moz-placeholder {
+        color: $color !important;
+    }
+    &::placeholder {
+        color: $color !important;
+    }
+}
+
+@mixin box-shadow($value1, $value2, $value3, $value4, $color) {
+    -webkit-box-shadow: $value1 $value2 $value3 $value4 $color;
+    -moz-box-shadow: $value1 $value2 $value3 $value4 $color;
+    -ms-box-shadow: $value1 $value2 $value3 $value4 $color;
+    -o-box-shadow: $value1 $value2 $value3 $value4 $color;
+    box-shadow: $value1 $value2 $value3 $value4 $color;
+}
+
+@mixin transition($condition, $s) {
+    -webkit-transition: $condition $s;
+    -moz-transition: $condition $s;
+    -ms-transition: $condition $s;
+    -o-transition: $condition $s;
+    transition: $condition $s;
+}
+
+@mixin transition-3v($condition, $s, $type) {
+    -webkit-transition: $condition $s $type;
+    -moz-transition: $condition $s $type;
+    -ms-transition: $condition $s $type;
+    -o-transition: $condition $s $type;
+    transition: $condition $s $type;
+}
+
+@mixin transition-box-shadow($time, $type) {
+    -webkit-transition: -webkit-box-shadow $time $type;
+    -moz-transition: -moz-box-shadow $time $type;
+    -ms-transition: -ms-box-shadow $time $type;
+    -o-transition: -o-box-shadow $time $type;
+    transition: box-shadow $time $type !important;
+}
+
+@mixin transform($type, $value) {
+    -webkit-transform: $type($value);
+    -moz-transform: $type($value);
+    -ms-transform: $type($value);
+    -o-transform: $type($value);
+    transform: $type($value);
+}
+
+@mixin transform-2v($type, $value1, $value2) {
+    -webkit-transform: $type($value1, $value2);
+    -moz-transform: $type($value1, $value2);
+    -ms-transform: $type($value1, $value2);
+    -o-transform: $type($value1, $value2);
+    transform: $type($value1, $value2) !important;
+}
+
+@mixin box-sizing($bsz_value) {
+    -webkit-box-sizing: $bsz_value;
+    -moz-box-sizing: $bsz_value;
+    -ms-box-sizing: $bsz_value;
+    -o-box-sizing: $bsz_value;
+    box-sizing: $bsz_value;
+}
+
+/** Justify Content **/
+
+@mixin justify-content($align) {
+    justify-content: $align;
+    -ms-align-items: $align;
+    align-items: $align;
+}
+
+@mixin column-width($cw_value) {
+    -webkit-column-width: $cw_value;
+    -moz-column-width: $cw_value;
+    -ms-column-width: $cw_value;
+    -o-column-width: $cw_value;
+    column-width: $cw_value;
+}
+
+@mixin column-gap($cg_value) {
+    -webkit-column-gap: $cg_value;
+    -moz-column-gap: $cg_value;
+    -ms-column-gap: $cg_value;
+    -o-column-gap: $cg_value;
+    column-gap: $cg_value;
+}
+
+@mixin column-count($cc_value) {
+    -webkit-column-count: $cc_value;
+    -moz-column-count: $cc_value;
+    -ms-column-count: $cc_value;
+    -o-column-count: $cc_value;
+    column-count: $cc_value;
+}
+
+@mixin animation($animation_name, $time, $type) {
+    -webkit-animation: $animation_name $time $type;
+    -moz-animation: $animation_name $time $type;
+    -ms-animation: $animation_name $time $type;
+    -o-animation: $animation_name $time $type;
+    animation: $animation_name $time $type;
+}
+
+@mixin bg-size-1v($size) {
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -ms-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size;
+}
+
+@mixin bg-size-2v($size1, $size2) {
+    -webkit-background-size: $size1 $size2;
+    -moz-background-size: $size1 $size2;
+    -ms-background-size: $size1 $size2;
+    -o-background-size: $size1 $size2;
+    background-size: $size1 $size2;
+}

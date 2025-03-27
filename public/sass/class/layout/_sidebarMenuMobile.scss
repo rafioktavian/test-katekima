@@ -1,0 +1,54 @@
+.cbp-spmenu {
+	background: $white-1;
+    position: fixed;
+    border-right: 1px solid $white-2;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.cbp-spmenu-vertical{
+	width: 320px;
+	height: 100%;
+	top: 0;
+    z-index: 1000;
+    
+    @media screen and (max-height: 26.375em){
+        font-size: 90%;
+		width: 190px;
+    }
+
+    @media screen and (max-width: 360px){
+        width: 260px;
+    }
+    .nav-mobile li a {
+        margin-left: 10px;
+    }
+}
+
+.cbp-spmenu-right{
+    left: -330px;
+    
+    &.cbp-spmenu-open{ left: 0; }
+
+    @media screen and (max-height: 26.375em){ left: -190px; }
+}
+
+.cbp-spmenu-push{
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu, .cbp-spmenu-push{ @include transition-3v(all, 0.3s, ease); }
+
+.icon-close-menu-mobile{
+    padding: 0 15px;
+
+    @media screen and (min-width: 992px){
+        display: none;
+    }
+}

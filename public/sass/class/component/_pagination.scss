@@ -1,0 +1,39 @@
+.pagination-custom {
+  &.left-xs {
+    @media screen and (max-width: 575px) {
+      justify-content: left !important;
+    }
+  }
+  li {
+    margin: 0 0.3rem;
+    .page-link {
+      border-radius: 2px !important;
+      padding: 0.5rem 0.85rem;
+      color: $gray-1;
+      border: 1px solid $gray-1;
+      &.dot {
+        border: 0 !important;
+        &:hover,
+        &:focus {
+          color: $gray-1;
+          background: $white-1;
+          border: 1px solid $gray-1;
+          transition: 0.5s;
+        }
+      }
+      &:hover,
+      &:focus {
+        color: $white-1;
+        background-color: $primary-color;
+        border-color: $primary-color;
+        transition: 0.5s;
+      }
+    }
+    &.active .page-link {
+      z-index: 1;
+      color: $white-1;
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}

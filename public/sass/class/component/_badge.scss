@@ -1,0 +1,104 @@
+.star-rating {
+    min-height: 25px;
+    div {
+        position: relative;
+        display: inline-block
+    }
+}
+
+.star-filled {
+    color: #f9d14e;
+}
+
+.star-unfilled {
+    color: #d8d8d8;
+    position: relative;
+}
+
+.star-rating-review {
+    top: 0;
+    left: 0;
+    font-size: 14px;
+}
+
+.favorite-icon {
+    border: none;
+    background: none;
+    float: right;
+    cursor: pointer;
+}
+
+.toasted.toasted-primary.warning {
+    background-color: #d9a60c;
+}
+
+.label-program-wrapper {
+  width: 170px;
+  height: 160px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  .label-program {
+    &.not-active {
+      font: bold 15px Sans-Serif;
+      color: #fff;
+      text-align: center;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      position: relative;
+      padding: 7px 2px 7px 15px;
+      left: -10px;
+      top: 50px;
+      width: 224px;
+      background-color: #595959;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#595959), to(#595959));
+      background-image: -webkit-linear-gradient(top, #595959, #595959);
+      background-image: -moz-linear-gradient(top, #BFDC7A, #8EBF45);
+      background-image: -ms-linear-gradient(top, #BFDC7A, #8EBF45);
+      background-image: -o-linear-gradient(top, #BFDC7A, #8EBF45);
+      color: #fff;
+    }
+  }
+}
+
+.disabled {
+  opacity: .65 !important;
+  cursor: not-allowed !important;
+}
+
+.badge-icon {
+  background-color: #FEBD58;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.bg-benefit {
+  background: #2EAB6F;
+  color: #fff;
+  p {
+    color: #fff;
+  }
+}
+
+.bg-action-plan {
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.5;
+  }
+}

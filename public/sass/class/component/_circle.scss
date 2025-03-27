@@ -1,0 +1,25 @@
+.circle-offers {
+    height: 30px;
+    width: 30px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    line-height: 1;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: $font-title;
+    font-weight: 600;
+    font-size: 14px;
+    
+
+    i{
+        position: relative;
+        top: 1px;
+    }
+    
+    &.black-primary{
+        background: $black-1;
+        color: $yellow-1;
+    }
+}

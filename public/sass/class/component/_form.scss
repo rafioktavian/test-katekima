@@ -1,0 +1,145 @@
+.form-control-custom {
+  border: 1px solid $white-2;
+  width: 100%;
+  padding: 0.7rem;
+  @include font($font-desc, .9rem, 500, $black-4);
+  border-radius: 3px;
+  @include placeholder($gray-blue-2);
+  &:focus {
+      border: 0.1rem solid #59a0d7;
+      outline: none;
+  }
+}
+
+.form-control {
+  @include radius(4px);
+  @include placeholder($black-6);
+  @include font($font-title, 15px, 400, $black-5);
+  letter-spacing: .2px;
+  line-height: 1;
+  border: solid 1px #edeff1;
+  &.form-md {
+      padding: .5rem 1rem;
+      height: calc(2.9rem + 2px);
+  }
+  &:focus {
+      @include box-shadow(2px, 2px, 4px, 2px, rgba(0, 0, 0, 0.12));
+  }
+}
+
+#fileInput {
+  display: none;
+}
+
+#foto1 {
+  display: none;
+}
+
+#foto2 {
+  display: none;
+}
+
+#foto3 {
+  display: none;
+}
+
+.has-float-label label,
+.has-float-label>span {
+  opacity: 0.4 !important;
+  font-size: 12px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3b444c;
+  margin-top: -20px;
+}
+
+.has-float-label input:placeholder-shown:not(:focus)+*,
+.has-float-label select:placeholder-shown:not(:focus)+*,
+.has-float-label textarea:placeholder-shown:not(:focus)+* {
+  opacity: 0.4 !important;
+  font-size: 14px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3b444c;
+  padding: .375rem .75rem !important;
+  margin-top: 0;
+}
+
+.has-float-label input,
+.has-float-label select,
+.has-float-label textarea {
+  border-radius: 4px !important;
+  border: solid 1px #edeff1 !important;
+  height: calc(2.25rem + 2px) !important;
+  padding: .375rem .75rem !important;
+}
+
+.has-float-label input:focus,
+.has-float-label select:focus,
+.has-float-label textarea:focus {
+  border-radius: 4px !important;
+  border: solid 1px #b1b4b7 !important;
+  height: calc(2.25rem + 2px) !important;
+  padding: .375rem .75rem !important;
+}
+
+.checkbox-desc {
+  opacity: 0.7;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #192835 !important;
+  margin: -2px 0 0 10px;
+}
+
+.form-disabled-white {
+  background: #fff;
+  cursor: not-allowed;
+}
+
+input[type="password"] {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+input[type="password"]::placeholder {
+  color: #ccc;
+}
+
+input[type="password"]:focus {
+  background-color: transparent;
+}
+
+.box-payment {
+  background: #fff;
+  border: 1px solid #f3f4f6;
+  border-radius: 4px;
+  padding: 1px 8px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  width: 46px;
+  .icon-payment {
+    width: 28px;
+    height: auto;
+  }
+  
+  .payment-name {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6b7280;
+    margin-bottom: 0px !important;
+  }
+}

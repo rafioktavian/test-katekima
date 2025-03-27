@@ -1,0 +1,122 @@
+.slide-overview {
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+
+.container-carousel-testimoni {
+  width: 90%;
+  margin: auto;
+}
+
+.slick-prev{
+  &::before{
+    content: url(../images/icon/arrow-left-material.png);
+  }
+
+  &:before{
+    color: #a0a0a0;
+  }
+}
+.slick-next{
+  &::before{
+    content: url(../images/icon/arrow-right-material.png);
+  }
+
+  &:before{
+    color: #a0a0a0;
+  }
+}
+button.slick-prev, button.slick-next {
+  display: block!important;
+}
+
+.caraousel-testimoni{
+  .slick-track {
+    padding-top: 40px;
+    
+    .slick-slide {
+      position: relative;
+    }
+
+    .slick-center {
+      position: relative;
+      top: -30px;
+      background: transparent;
+      filter: opacity(1) !important;
+    }
+  }
+}
+
+.slide-item-testimoni {
+  width: 405px;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1.5rem;
+  @include radius(6px);
+  @include box-shadow(5px, 5px, 4px, 5px, rgba(0, 0, 0, 0.06));
+  @include transition-3v(all, 0.3s, ease-in-out);
+  background-color: $white-1;
+  border: solid 1px rgba(151, 151, 151, 0.19);
+  // -webkit-transition: all 0.3s ease-in-out;
+  // -moz-transition: all 0.3s ease-in-out;
+  // -o-transition: all 0.3s ease-in-out;
+  // -ms-transition: all 0.3s ease-in-out;
+  // transition: all 0.3s ease-in-out;
+
+  @media screen and (max-width: 1285px){
+    width: 370px;
+  }
+
+  @media screen and (max-width: 1285px){
+    width: 370px;
+  }
+
+  @media screen and (max-width: 1285px){
+    width: 350px;
+  }
+
+  @media screen and (max-width: 1368px){
+    width: 380px;
+  }
+
+  img.crk-left {
+    // position: absolute;
+    // left: 20px;
+    // top: 20px;
+    width: 35px;
+  }
+  
+  img.crk-right {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 59px;
+  }
+
+  h4 {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0px;
+    font-size: 14px !important;
+    line-height: 1.7;
+  }
+}
+
+.slick-slide {
+  width: 405px;
+  margin: 10px;
+
+  background: url("../images/icon/combined-shape-2.png") !important;
+  background-size: 350px 100px !important;
+  background-repeat: no-repeat !important;
+  padding: 20px;
+  
+  img {
+    width: 115%;
+    border: 2px solid $white-1;
+  }
+}
